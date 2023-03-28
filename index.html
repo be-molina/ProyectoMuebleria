@@ -2,22 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muebles pa tu casa</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
-<body>
-
-
-
-
-
+<body background="img/fondo.jpg">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -27,6 +22,58 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <section class="container-fluid">
+        <header>
+            <h1 id="TitPagPrinc">Muebles para tu casa</h1>
+        </header>
+        <!--TopNavBar-->
+        <div id="Menu">
+            <div class="topnav">
+                <a class="active" href="#inicio">Inicio</a>
+                <a href="#muebles">Muebles</a>
+                <a href="#decoracion">Decoracion</a>
+                <a href="#contacto">Contacto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <!--CARRUSEL-->
+        <div class="slider">
+            <ul>
+                <li>
+                    <img src="img/slider1.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="img/slider2.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="img/slider3.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="img/slider4.jpg" alt="" />
+                </li>
+            </ul>
+        </div>
+        <!--MODAL-->
+        <input type="checkbox" id="btn-modal" />
+        <label for="btn-modal" class="lbl-modal"> Información de Contacto </label>
+        <div class="modal">
+            <div class="contenedor">
+                <header>Información de Contacto</header>
+                <label for="btn-modal">X</label>
+                <div class="contenido">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequatur iure, nobis reprehenderit, sapiente nihil soluta
+                        labore ab debitis a sunt iste, et deserunt amet odit consectetur
+                        magnam placeat repellendus reiciendis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
