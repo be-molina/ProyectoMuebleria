@@ -1,7 +1,12 @@
+
+/*Importo las fuentes*/
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Futura PT' , sans-serif;
 }
 
 /*Se vuelve el fondo responsivo*/
@@ -13,6 +18,7 @@ body{
 #TitPagPrinc {
     text-align: center;
     color: #ddd;
+    font-size: 50px;
 
 }
 /*TopNav*/
@@ -84,6 +90,39 @@ body{
 
     75%{margin-left: -300%;}
     100%{margin-left: -300%;}
+}
+/*PRODUCTOS*/
+.contenedor-prod{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto; 
+    display: flex;
+    justify-content: space-between;
+    /*oculto lo que queda fuera del contenedor*/
+    contain: paint;
+}
+.contenedor-prod .contenedor-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(220px,1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    transition: .3s;
+}
+
+.contenedor-prod .contenedor-items .item{
+    max-width: 200px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #666 ;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.contenedor-items .item .img-item{
+    width: 100%;
 }
 /*MODAL*/
 .modal{
