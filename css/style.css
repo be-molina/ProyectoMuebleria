@@ -103,7 +103,7 @@ body{
 }
 .contenedor-prod .contenedor-items{
     margin-top: 30px;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minimax(220px,1fr));
     grid-gap: 30px;
     grid-row-gap: 30px;
@@ -112,6 +112,7 @@ body{
 }
 
 .contenedor-prod .contenedor-items .item{
+    background-color: #ddd;
     max-width: 200px;
     padding: 10px;
     margin: auto;
@@ -121,10 +122,40 @@ body{
     transition: .3s;
 }
 
+.contenedor-items .item:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
 
 .contenedor-items .item .img-item{
     width: 100%;
 }
+
+.contenedor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor-items .item .precio-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.contenedor-items .item .boton-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: black;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /*MODAL*/
 .modal{
     width: 100%;
