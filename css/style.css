@@ -218,7 +218,7 @@ footer{
     margin-bottom: 5px;
 
 }
-/*.carrito-item .btn-eliminar{ 
+.carrito-item .btn-eliminar{ 
     position: absolute;
     right: 15px;
     top: 15px;
@@ -230,4 +230,36 @@ footer{
     border-radius: 50%
     border: 1px solid #000;
     cursor: pointer;
-}*/
+    display: block;
+    background: transparent;
+    z-index: 20;
+}
+.carrito-item .btn-eliminar i{
+    pointer-events: none;
+
+}
+.carrito-total{
+    background-color: #ddd;
+    padding: 30px;
+}
+.carrito-total .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carrito-total .btn-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background: #000;
+    color: #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+}
+
+
