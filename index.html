@@ -27,21 +27,26 @@
     </header>
     <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-dark my-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Mueblería Abeto</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    <a class="nav-link" href="muebles.html">Muebles</a>
-                    <a class="nav-link" href="decoracion.html">Decoración</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Mueblería Abeto</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="muebles.html"">Muebles</a>
+                </li>
+                <li class=" nav-item">
+                        <a class="nav-link" href="decoracion.html">Decoración</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="carrito.html">Carrito</a>
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </nav>
     <!--CARRUSEL-->
@@ -142,26 +147,30 @@
             </div>
         </div>
     </div>
-    <!--FOOTER-->
-    <footer>
-        <h2>Gracias por su preferencia</h2>
-        <h3>Fono centro de ayuda: 111 222 3333</h3>
-    </footer>
-    <!--MODAL CONTACTO-->
+    <!--MODAL-->
+    <input type="checkbox" id="btn-modal" />
+    <label for="btn-modal" class="lbl-modal"> Información de Contacto </label>
     <div class="modal">
         <div class="contenedor">
             <header>Información de Contacto</header>
             <label for="btn-modal">X</label>
             <div class="contenido">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Consequatur iure, nobis reprehenderit, sapiente nihil soluta
-                    labore ab debitis a sunt iste, et deserunt amet odit consectetur
-                    magnam placeat repellendus reiciendis.
+                    Encuentrenos en el local #777 Av.Valparaiso Viña del Mar,
                 </p>
+                <p>en nuestro fono de atencion: 111 222 3333</p>
+                <p>O en nuestras redes sociales:</p> 
+                <p><u>facebook</u></p> 
+                <p><u>instagram</u></p> 
+                <p><u>tiktok</u></p> 
             </div>
         </div>
     </div>
+    <!--FOOTER-->
+    <footer>
+        <h2>Gracias por su preferencia</h2>
+        <h3>Fono de Ayuda: 111 222 3333</h3>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

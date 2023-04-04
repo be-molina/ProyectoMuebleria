@@ -26,25 +26,30 @@
         <h1 id="TitPagPrinc">Mueblería Abeto</h1>
         <h2 id="SubTit">Carrito</h2>
     </header>
-    <!--NavBar-->
     <nav class="navbar navbar-expand-lg navbar-dark my-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Mueblería Abeto</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                    <a class="nav-link" href="muebles.html">Muebles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Mueblería Abeto</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="muebles.html"">Muebles</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="decoracion.html">Decoración</a>
-                    <a class="nav-link active" aria-current="page" href="carrito.html">Carrito</a>
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </div>
-            </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="carrito.html">Carrito</a>
+                </li>
+            </ul>
         </div>
     </nav>
+
     <!--Carrito-->
     <div class="carrito-items">
         <div class="carrito-item">
@@ -98,7 +103,7 @@
         <div class="carrito-item">
             <img src="img/sofa.jpg" alt="" width="80px">
             <div class="carrito-item-detalles">
-                <span class="carrito-item-titulo">SofÃ¡</span>
+                <span class="carrito-item-titulo">Sofá</span>
                 <div class="selector-cantidad">
                     <i class="fa-solid fa-minus restar-cantidad"></i>
                     <input type="text" value="1" class="carrito-item-cantidad" disabled>
@@ -118,9 +123,28 @@
                 $424.990,00
             </span>
         </div>
-        <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+        <!--<button class="btn-pagar" href="pagar.html">Pagar <i class="fa-solid fa-bag-shopping"></i></button>-->
+        <a class="btn-pagar" href="pagar.html">Pagar <i class="fa-solid fa-bag-shopping"></i></a>
     </div>
-
+    <!--MODAL-->
+    <input type="checkbox" id="btn-modal" />
+    <label for="btn-modal" class="lbl-modal"> Información de Contacto </label>
+    <div class="modal">
+        <div class="contenedor">
+            <header>Información de Contacto</header>
+            <label for="btn-modal">X</label>
+            <div class="contenido">
+                <p>
+                    Encuentrenos en el local #777 Av.Valparaiso Viña del Mar,
+                </p>
+                <p>en nuestro fono de atencion: 111 222 3333</p>
+                <p>O en nuestras redes sociales:</p> 
+                <p><u>facebook</u></p> 
+                <p><u>instagram</u></p> 
+                <p><u>tiktok</u></p> 
+            </div>
+        </div>
+    </div>
     <!--FOOTER-->
     <footer>
         <h2>Gracias por su preferencia</h2>
