@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,61 +17,151 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body background="img/fondo.jpg">
     <header>
+        <!--Titulo-->
         <h1 id="TitPagPrinc">Mueblería Abeto</h1>
+        <!--Subtitulo1-->
         <h2 id="SubTit">Inicio</h2>
     </header>
-<!--NavBar-->
-    <nav class="navbar navbar-expand-lg navbar-dark my-4"> 
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark my-4">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mueblería Abeto</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            <a class="nav-link" href="muebles.html">Muebles</a>
-            <a class="nav-link" href="decoracion.html">Decoración</a>
-            <a class="nav-link" href="carrito.html">Carrito</a>
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="navbar-brand" href="#">Mueblería Abeto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link" href="muebles.html">Muebles</a>
+                    <a class="nav-link" href="decoracion.html">Decoración</a>
+                    <a class="nav-link" href="carrito.html">Carrito</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
             </div>
         </div>
-        </div>
     </nav>
-<!--CARRUSEL-->
-<div class="slider">
-    <ul>
-        <li>
-            <img src="img/slider1.jpg" alt="" />
-        </li>
-        <li>
-            <img src="img/slider2.jpg" alt="" />
-        </li>
-        <li>
-            <img src="img/slider3.jpg" alt="" />
-        </li>
-        <li>
-            <img src="img/slider4.jpg" alt="" />
-        </li>
-    </ul>
-</div>
-<!--MODAL CONTACTO-->
-<div class="modal">
-    <div class="contenedor">
-        <header>Información de Contacto</header>
-        <label for="btn-modal">X</label>
-        <div class="contenido">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur iure, nobis reprehenderit, sapiente nihil soluta
-                labore ab debitis a sunt iste, et deserunt amet odit consectetur
-                magnam placeat repellendus reiciendis.
-            </p>
+    <!--CARRUSEL-->
+    <div class="slider">
+        <ul>
+            <li>
+                <img src="img/carrusel1.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/carrusel2.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/carrusel3.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/carrusel4.jpg" alt="" />
+            </li>
+        </ul>
+    </div>
+    <!--SubTitulo2-->
+    <div>
+        <h2 id="SubTit">Productos Recomendados</h2>
+    </div>
+    <!--PRODUCTOS-->
+    <div class="contenedor-prod">
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Comedor 6 Sillas Centro de Cristal</span>
+                <img src="img/comedor1.jpg" alt="" class="img-item">
+                <span class="precio-item">$190.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Escritorio Cajonera Blanco</span>
+                <img src="img/escritorio1.jpg" alt="" class="img-item">
+                <span class="precio-item">$119.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Mesa de centro Patas de Metal</span>
+                <img src="img/mesacentro1.jpg" alt="" class="img-item">
+                <span class="precio-item">$29.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Alfombra Grande</span>
+                <img src="img/alfombra1.jpg" alt="" class="img-item">
+                <span class="precio-item">$49.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Sofá Gris</span>
+                <img src="img/sofa1.jpg" alt="" class="img-item">
+                <span class="precio-item">$179.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Alfombra Mediana Diseño Blanco</span>
+                <img src="img/alfombra3.jpg" alt="" class="img-item">
+                <span class="precio-item">$34.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Lampara de Mesa</span>
+                <img src="img/lampara1.jpg" alt="" class="img-item">
+                <span class="precio-item">$19.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Lampara de Techo</span>
+                <img src="img/lampara2.jpg" alt="" class="img-item">
+                <span class="precio-item">$14.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cortina Tela Gris</span>
+                <img src="img/cortinas1.jpg" alt="" class="img-item">
+                <span class="precio-item">$19.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cortina Tela color Negro</span>
+                <img src="img/cortinas3.jpg" alt="" class="img-item">
+                <span class="precio-item">$29.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Persiana color Negro</span>
+                <img src="img/persiana1.jpg" alt="" class="img-item">
+                <span class="precio-item">$19.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cortina Tela Cian</span>
+                <img src="img/cortinas2.jpg" alt="" class="img-item">
+                <span class="precio-item">$24.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
         </div>
     </div>
-</div>
+    <!--FOOTER-->
+    <footer>
+        <h2>Gracias por su preferencia</h2>
+        <h3>Fono centro de ayuda: 111 222 3333</h3>
+    </footer>
+    <!--MODAL CONTACTO-->
+    <div class="modal">
+        <div class="contenedor">
+            <header>Información de Contacto</header>
+            <label for="btn-modal">X</label>
+            <div class="contenido">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur iure, nobis reprehenderit, sapiente nihil soluta
+                    labore ab debitis a sunt iste, et deserunt amet odit consectetur
+                    magnam placeat repellendus reiciendis.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -82,4 +173,5 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
