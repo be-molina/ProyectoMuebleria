@@ -16,6 +16,9 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body background="img/fondo.jpg">
@@ -42,6 +45,81 @@
             </div>
         </div>
     </nav>
+    <!--Carrito-->
+    <div class="carrito-items">
+        <div class="carrito-item">
+            <img src="img/escritorio.jpg" alt="" width="80px">
+            <div class="carrito-item-detalles">
+                <span class="carrito-item-titulo">Escritorio</span>
+                <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                </div>
+                <span class="carrito-item-precio">$189.990</span>
+            </div>
+            <span class="btn-eliminar">
+                <i class="fa-solid fa-trash"></i>
+            </span>
+        </div>
+
+        <div class="carrito-item">
+            <img src="img/mesacentro.jpg" alt="" width="80px">
+            <div class="carrito-item-detalles">
+                <span class="carrito-item-titulo">Mesa de centro</span>
+                <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                </div>
+                <span class="carrito-item-precio">$120.000</span>
+            </div>
+            <span class="btn-eliminar">
+                <i class="fa-solid fa-trash"></i>
+            </span>
+        </div>
+
+        <div class="carrito-item">
+            <img src="img/macetero.jpg" alt="" width="80px">
+            <div class="carrito-item-detalles">
+                <span class="carrito-item-titulo">Macetero</span>
+                <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                </div>
+                <span class="carrito-item-precio">$35.000</span>
+            </div>
+            <span class="btn-eliminar">
+                <i class="fa-solid fa-trash"></i>
+            </span>
+        </div>
+
+        <div class="carrito-item">
+            <img src="img/sofa.jpg" alt="" width="80px">
+            <div class="carrito-item-detalles">
+                <span class="carrito-item-titulo">SofÃ¡</span>
+                <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad"></i>
+                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                </div>
+                <span class="carrito-item-precio">$80.000</span>
+            </div>
+            <span class="btn-eliminar">
+                <i class="fa-solid fa-trash"></i>
+            </span>
+        </div>
+    </div>
+    <div class="carrito-total">
+        <div class="fila">
+            <strong>Tu total</strong>
+            <span class="carrito-total-precio">
+                $424.990,00
+            </span>
+        </div>
+        <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+    </div>
 
     <!--FOOTER-->
     <footer>
