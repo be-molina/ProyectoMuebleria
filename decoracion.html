@@ -1,44 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Muebles</title>
-        <!--Bootstrap-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-        <!--Fuente-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
-        <!--CSS-->
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    </head>
-    <body background="img/fondo.jpg">
-        <header>
-            <h1 id="TitPagPrinc">Mueblería Abeto</h1>
-            <h2 id="SubTit">Decoración</h2>
-        </header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebles</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body background="img/fondo.jpg">
+    <header>
+        <h1 id="TitPagPrinc">Mueblería Abeto</h1>
+        <h2 id="SubTit">Decoración</h2>
+    </header>
     <!--NavBar-->
-        <nav class="navbar navbar-expand-lg navbar-dark my-4"> 
-            <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark my-4">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">Mueblería Abeto</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                <a class="nav-link" href="muebles.html">Muebles</a>
-                <a class="nav-link" href="decoracion.html">Decoración</a>
-                <a class="nav-link" href="carrito.html">Carrito</a>
-                <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="muebles.html">Muebles</a>
+                    <a class="nav-link active" aria-current="page" href="decoracion.html">Decoración</a>
+                    <a class="nav-link" href="carrito.html">Carrito</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>
                 </div>
             </div>
+        </div>
+    </nav>
+    <!--PRODUCTOS-->
+    <div class="contenedor-prod">
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Alfombra Grande</span>
+                <img src="img/alfombra1.jpg" alt="" class="img-item">
+                <span class="precio-item">$49.990</span>
+                <button class="boton-item">Agregar al carrito</button>
             </div>
-        </nav>
+            <div class="item">
+                <span class="titulo-item">Alfombra Mediana Roja</span>
+                <img src="img/alfombra2.jpg" alt="" class="img-item">
+                <span class="precio-item">$39.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Alfombra Mediana Diseño Blanco</span>
+                <img src="img/alfombra3.jpg" alt="" class="img-item">
+                <span class="precio-item">$34.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cortina Tela Gris</span>
+                <img src="img/cortinas1.jpg" alt="" class="img-item">
+                <span class="precio-item">$19.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cortina Tela Cian</span>
+                <img src="img/cortinas2.jpg" alt="" class="img-item">
+                <span class="precio-item">$24.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cortina Tela color Negro</span>
+                <img src="img/cortinas3.jpg" alt="" class="img-item">
+                <span class="precio-item">$29.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Lampara de Mesa</span>
+                <img src="img/lampara1.jpg" alt="" class="img-item">
+                <span class="precio-item">$19.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Lampara de Techo</span>
+                <img src="img/lampara2.jpg" alt="" class="img-item">
+                <span class="precio-item">$14.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Lampras Geometricas de Madera</span>
+                <img src="img/lampara3.jpg" alt="" class="img-item">
+                <span class="precio-item">$17.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Lampara de Pie</span>
+                <img src="img/lampara4.jpg" alt="" class="img-item">
+                <span class="precio-item">$21.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Persiana color Negro</span>
+                <img src="img/persiana1.jpg" alt="" class="img-item">
+                <span class="precio-item">$19.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Persiana Malla Café</span>
+                <img src="img/persiana2.jpg" alt="" class="img-item">
+                <span class="precio-item">$17.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <h2>Gracias por su preferencia</h2>
+        <h3>Fono centro de ayuda: 111 222 3333</h3>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -49,5 +135,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    </body>
+</body>
+
 </html>
