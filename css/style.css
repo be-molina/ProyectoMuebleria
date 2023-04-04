@@ -15,81 +15,393 @@ body{
     background-size: cover;
 }
 /*titulo*/
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+* {
+
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Futura PT', sans-serif;
+}
+
+/*Titulo Pagina*/
 #TitPagPrinc {
+    font-family: 'Kanit', sans-serif;
     text-align: center;
     color: #ddd;
+    font-size: 80px;
+}
+
+/*Subtitulo Pagina*/
+#SubTit {
+    font-family: 'Kanit', sans-serif;
+    padding: 14px 16px;
+    text-align: center;
+    color: #809abb;
     font-size: 50px;
-
-}
-/*TopNav*/
-/*Se le agrega color de fondo a la barra de menu*/
-.topnav {
-    background-color: #333;
-    overflow: hidden;
 }
 
-/*Se acomodan las vitas al lado izquierdo de la barra*/
-.topnav a {
+/*Primer "boton" Mueblería Abeto*/
+.navbar-brand {
     float: left;
-    color: #f2f2f2;
+    color: #f6f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 40px;
+}
+
+/*NabBar en General*/
+.navbar {
+    width: 100%;
+    background-color: #2c324a;
+    overflow: hidden;
+}
+
+/*NADA*/
+.navbar-nav a {
+    float: left;
+    color: #f6f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/*NADA*/
+.navbar-nav a:hover {
+    background-color: #292b35;
+    color: #f6f2f6;
+}
+
+/* CARRUSEL */
+
+.slider {
+    margin-top: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.c.item{
+    height: 480px;
+}
+
+.c-img{
+    height: 75vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+/*PRODUCTOS*/
+.contenedor-prod .contenedor-items {
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenedor-prod .contenedor-items {
+    margin-top: 30px;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minimax(220px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    transition: .3s;
+}
+
+.contenedor-prod .contenedor-items .item {
+    background-color: #ddd;
+    max-width: 200px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.contenedor-items .item:hover {
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+
+.contenedor-items .item .img-item {
+    width: 100%;
+}
+
+.contenedor-items .item .titulo-item {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor-items .item .precio-item {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.contenedor-items .item .boton-item {
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: black;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #2c324a;
+    overflow: hidden;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    color: #809abb;
+    font-size: 50px;
+}
+
+/*Carrito*/
+.carrito-items {
+    background-color: #ddd;
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #666;
+    padding: 20px;
+
+}
+
+.carrito-item img {
+    margin-right: 20px;
+}
+
+.carrito-item .carrito-item-titulo {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.carrito-item .selector-cantidad {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.carrito-item .carrito-item-cantidad {
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.carrito-item .selector-cantidad i {
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.carrito-item .carrito-item-precio {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+.carrito-item .btn-eliminar {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50% border 1px solid #000;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+}
+
+.carrito-item .btn-eliminar i {
+    pointer-events: none;
+
+}
+
+.carrito-total {
+    background-color: #ddd;
+    padding: 30px;
+}
+
+.carrito-total .fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carrito-total .btn-pagar {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #000;
+    color: #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Vista pagar*/
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-25 {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+}
+
+.col-50 {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+}
+
+.col-75 {
+    -ms-flex: 75%;
+    /* IE10 */
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btn {
+    background-color: #2c324a;
+    color: #ffffff;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
     font-size: 17px;
 }
 
-/*Se le agrega hover a las vistas*/
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-  }
-
-
-/* carrusel */
-
-.slider{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.btn:hover {
+    background-color: #809abb;
+    color: #292b35;
 }
 
-.slider{
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-}
-.slider ul{
-    display: flex;
-    animation: cambio 20s infinite
-    alternate linear;
-    width: 400%;
+span.price {
+    float: right;
+    color: grey;
 }
 
-.slider li{
-    width: 100%;
-    list-style: none;
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .col-25 {
+        margin-bottom: 20px;
+    }
 }
-.slider img{
-    width: 100%;
-    height: 100%;
+/*search button*/
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #808080;
+    float: left;
+    width: 80%;
+    background: #cbcbd1;
+    color: black
 }
 
-@keyframes cambio{
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
+/* Style the submit button */
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2c3249;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
 
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
+form.example button:hover {
+    background: #809abb;
+    color: #1d201d;
+}
 
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 /*PRODUCTOS*/
 .contenedor-prod{
@@ -168,7 +480,7 @@ body{
     position:fixed;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.5);
+    background: #00000080;
     transition: all 500ms ease;
     opacity: 0;
     visibility: hidden;
@@ -193,7 +505,7 @@ body{
 }
 .contenedor header{
     padding: 10px;
-    background: #5f3711;
+    background: #2c324a;
     color: #fff;
 }
 .contenedor label{
