@@ -45,8 +45,99 @@
             </ul>
         </div>
     </nav>
+<!--Formulario-->
+<div class="container">
+    <form action="" id="pago">
+        <div class="row">
+            <div class="col">
+                <h3 class="title">Direccion de envio</h3>
 
+                <div class="inputBox">
+                    <span> Nombre completo: </span>
+                    <input type="text" name="" id="nombre"placeholder="Ej. Juan Carlos Batman">
+                    <p id="resultado_nombre"></p>
+                </div>
 
+                <div class="inputBox">
+                    <span> Email: </span>
+                    <input type="text" name="" id="email" placeholder="Ej. soylavenganza:3@email.com">
+                    <p id="resultado_email"></p>
+                </div>
+
+                <div class="inputBox">
+                    <span> Dirrecion: </span>
+                    <input type="text" name="" id="direccion" placeholder="Ej. World Trade Center">
+                    <p id="resultado_direccion"></p>
+                </div>
+
+                <div class="inputBox">
+                    <span> Ciudad: </span>
+                    <input type="text" name="" id="ciudad" placeholder="Ej. Talca">
+                    <p id="resultado_ciudad"></p>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span> Comuna: </span>
+                        <input type="text" name="" id="comuna" placeholder="Ej. Rancagua">
+                        <p id="resultado_comuna"></p>
+                    </div>
+                    <div class="inputBox">
+                        <span> Codigo postal: </span>
+                        <input type="number" name="" id="codpostal" placeholder="0000000">
+                        <p id="resultado_codpostal"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <h3 class="title"> Forma de pago </h3>
+
+                <div class="inputBox">
+                    <span> Metodos de pago : </span>
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+
+                <div class="inputBox">
+                    <span> Titular de la tarjeta: </span>
+                    <input type="text" name="" id="nombretit" placeholder="Ej. Juanito Alcachofa">
+                    <p id="resultado_ntitular"></p>
+                </div>
+
+                <div class="inputBox">
+                    <span> Numero de la tarjeta: </span>
+                    <input type="number" name="" id="numtarj" placeholder="XXXX XXXX XXXX XXXX">
+                    <p id="resultado_numtarj"></p>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span> Fecha de vencimiento: </span>
+                        <input type="number" name="" id="fechaven" placeholder="MM/YYYY">
+                        <p id="resultado_fechaven"></p>
+                    </div>
+
+                    <div class="inputBox">
+                        <span> CVV: </span>
+                        <input type="number" name="cvv" id="cvv" placeholder="Ej. 911">
+                        <p id="resultado_cvv"></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <input type="submit" value="Proceder con el pago" class="submit-btn"  id="boton-submit">
+        
+    </form>
+
+</div>
+<script src="js/validapago.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
