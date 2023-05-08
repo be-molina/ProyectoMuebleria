@@ -1,11 +1,11 @@
 @import url('https://fonts.cdnfonts.com/css/futura-pt');
-
 * {
 
     padding: 0;
     box-sizing: border-box;
     font-family: 'Futura PT', sans-serif;
 }
+
 
 /*Titulo Pagina*/
 #TitPagPrinc {
@@ -15,7 +15,7 @@
     font-size: 80px;
 }
 
-Subtitulo Pagina
+/*Subtitulo Pagina*/
 #SubTit {
     font-family: 'Kanit', sans-serif;
     padding: 14px 16px;
@@ -85,7 +85,9 @@ Subtitulo Pagina
 }
 
 .contenedor-prod .contenedor-items {
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     grid-template-columns: repeat(auto-fit, minimax(220px, 1fr));
     grid-gap: 30px;
@@ -95,10 +97,11 @@ Subtitulo Pagina
 }
 
 .contenedor-prod .contenedor-items .item {
-    background-color: #ddd;
+    background-color: #2a3646;
     max-width: 200px;
     padding: 10px;
-    margin: auto;
+    margin:0px;
+    margin-bottom: 20px;
     border: 1px solid #666;
     border-radius: 10px;
     padding: 20px;
@@ -106,13 +109,30 @@ Subtitulo Pagina
 }
 
 .contenedor-items .item:hover {
-    box-shadow: 0 0 10px #666;
+    box-shadow: 0 0 15px #ffffff;
     scale: 1.05;
 }
 
-.contenedor-items .item .img-item {
+.contenedor-items .item {
     width: 100%;
 }
+
+.img-item{
+    width: 157px;
+    height: 150px;
+}
+.titulo-item{
+    width: 100%;
+    height: 15%;
+}
+.precio-item{
+    color: #ffffff;
+}
+
+.titulo-item{
+    color: #ffffff;
+}
+
 
 .contenedor-items .item .titulo-item {
     display: block;
@@ -142,11 +162,11 @@ Subtitulo Pagina
 /*FOOTER*/
 footer {
     background-color: #2c324a;
-    overflow: hidden;
-    font-family: 'Kanit', sans-serif;
-    text-align: center;
     color: #809abb;
-    font-size: 50px;
+    font-size: 15px;
+}
+#botones_rs{
+    display: flex;
 }
 
 /*Carrito*/
@@ -256,99 +276,6 @@ footer {
     text-align: center;
 }
 
-/*Vista pagar*/
-.row {
-    display: -ms-flexbox;
-    /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap;
-    /* IE10 */
-    flex-wrap: wrap;
-    margin: 0 -16px;
-}
-
-.col-25 {
-    -ms-flex: 25%;
-    /* IE10 */
-    flex: 25%;
-}
-
-.col-50 {
-    -ms-flex: 50%;
-    /* IE10 */
-    flex: 50%;
-}
-
-.col-75 {
-    -ms-flex: 75%;
-    /* IE10 */
-    flex: 75%;
-}
-
-.col-25,
-.col-50,
-.col-75 {
-    padding: 0 16px;
-}
-
-.container {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-}
-
-input[type=text] {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-label {
-    margin-bottom: 10px;
-    display: block;
-}
-
-.icon-container {
-    margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px;
-}
-
-.btn {
-    background-color: #2c324a;
-    color: #ffffff;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 17px;
-}
-
-.btn:hover {
-    background-color: #809abb;
-    color: #292b35;
-}
-
-span.price {
-    float: right;
-    color: grey;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-    .row {
-        flex-direction: column-reverse;
-    }
-
-    .col-25 {
-        margin-bottom: 20px;
-    }
-}
 /*search button*/
 /* Style the search field */
 form.example input[type=text] {
