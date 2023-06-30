@@ -1,0 +1,309 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muebleria</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lato:ital@1&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body background="{% static 'img/fondo.jpg' %}">
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Mueblería Abeto</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="muebles.html">Muebles</a>
+                </li>
+                <li class=" nav-item">
+                        <a class="nav-link" href="decoracion.html">Decoracion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="carrito.html">Carrito</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="iniciar_sesion.html">Iniciar Sesion</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--CARRUSEL-->
+
+    <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#hero-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#hero-carousel" data-slide-to="1"></li>
+            <li data-target="#hero-carousel" data-slide-to="2"></li>
+            <li data-target="#hero-carousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+                <img class="d-block w-100 c-img" src="{% static 'img/carrusel1.jpeg' %}" alt="First slide">
+                <div class="carousel-caption mt-4">
+                    <h1 class="display-3 font-weight-bolder">15% De descuento</h1>
+                    <p class="mt-5 display-4">en sofas y mesas</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img class="d-block w-100 c-img" src="{% static 'img/carrusel2.jpg' %}" alt="Second slide">
+                <div class="carousel-caption mt-4">
+                    <h1 class="display-3 font-weight-bolder">20% de descuento en productos living</h1>
+                    <p class="mt-5 display-4">Utilizando tarjeta</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img class="d-block w-100 c-img" src="{% static 'img/carrusel3.jpg' %}" alt="Third slide">
+                <div class="carousel-caption mt-4">
+                    <h1 class="display-3 font-weight-bolder ">10% De descuento en Lamparas</h1>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img class="d-block w-100 c-img" src="{% static 'img/carrusel4.jpg' %}" alt="Fourth slide">
+                <div class="carousel-caption mt-4">
+                    <h1 class="display-3 font-weight-bolder text-capitalize">Despacho Gratis</h1>
+                    <p class="mt-5 display-4">En compras sobre los $300.000</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--SubTitulo2-->
+    <div>
+        <h2 id="SubTit">Productos Recomendados</h2>
+    </div>
+    <!--PRODUCTOS-->
+    <div class="contenedor-prod">
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Comedor 6 Sillas Centro de Cristal</span>
+                <img src="{% static 'img/comedor1.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$190.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Escritorio Cajonera Blanco</span>
+                <img src="{% static 'img/escritorio1.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$119.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Mesa de centro Patas de Metal</span>
+                <img src="{% static 'img/mesacentro1.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$29.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Alfombra Grande</span>
+                <img src="{% static 'img/alfombra1.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$49.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Sofá Gris</span>
+                <img src="{% static 'img/sofa1.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$179.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Alfombra Mediana Diseño Blanco</span>
+                <img src="{% static 'img/alfombra3.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$34.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Lampara de Mesa</span>
+                <img src="{% static 'img/lampara1.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$19.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Lampara de Techo</span>
+                <img src="{% static 'img/lampara2.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$14.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cortina Tela Gris</span>
+                <img src="{% static 'img/cortinas1.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$19.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cortina Tela color Negro</span>
+                <img src="{% static 'img/cortinas3.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$29.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Persiana color Negro</span>
+                <img src="{% static 'img/persiana1.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$19.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Cortina Tela Cian</span>
+                <img src="{% static 'img/cortinas2.jpg' %}" alt="" class="img-item">
+                <span class="precio-item">$24.990</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+    <!--MODAL-->
+    <div class="modal">
+        <div class="contenedor">
+            <header>Información de Contacto</header>
+            <label for="btn-modal">X</label>
+            <div class="contenido">
+                <p>
+                    Encuentrenos en el local #777 Av.Valparaiso Viña del Mar,
+                </p>
+                <p>en nuestro fono de atencion: 111 222 3333</p>
+                <p>O en nuestras redes sociales:</p>
+                <p><u>facebook</u></p>
+                <p><u>instagram</u></p>
+                <p><u>tiktok</u></p>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer class="text-center text-lg-start text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h4 class="text-uppercase mb-4 font-weight-bold">
+                            Mueblería Abeto
+                        </h4>
+                        <div id="botones_rs" class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <!-- Facebook -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="proximamente.html" class="text-white" role="button"><i
+                                    class="fab fa-facebook-f"></i></a>
+    
+                            <!-- Twitter -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="proximamente.html" class="text-white" role="button"><i
+                                    class="fab fa-twitter"></i></a>
+    
+                            <!-- Google -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="proximamente.html" class="text-white" role="button"><i
+                                    class="fab fa-google"></i></a>
+    
+                            <!-- Instagram -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="proximamente.html" class="text-white" role="button"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="p-3">
+                            © 2023 Copyright:
+                            <a class="text-white" href="proximamente.html">MuebleriaAbeto.com</a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            Te Ayudamos
+                        </h6>
+                        <p>
+                            <a class="text-white" href="proximamente.html">Preguntas Frecuentes</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="proximamente.html">Centro de Ayuda</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="proximamente.html">Cambio o Debolucines</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="proximamente.html">Trabaja con Nosotros</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            Legal
+                        </h6>
+                        <p>
+                            <a class="text-white" href="proximamente.html">Terminos y Condiciones</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="proximamente.html">Politica de Privacidad</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="proximamente.html">Codigo Ético</a>
+                        </p>
+                        <p>
+                            <a class="text-white" href="proximamente.html">Canal Ético</a>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                        <p><i class="fas fa-home mr-3"></i> #777 Av.Valparaiso Viña del Mar</p>
+                        <p><i class="fas fa-envelope mr-3"></i> muebleriaabeto@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> (32) 777 7777</p>
+                        <p><i class="fas fa-print mr-3" ></i> (32) 555 5555</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!--Grid row-->
+            </section>
+
+            <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+    </footer>
+    <script src="{% static 'https://code.jquery.com/jquery-3.3.1.slim.min.js' %}"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="{% static 'https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js' %}"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js' %}"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
